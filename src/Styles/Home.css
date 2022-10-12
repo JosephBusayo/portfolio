@@ -1,0 +1,237 @@
+.home{
+    height: 100vh;
+    z-index: -10;
+}
+
+
+
+/* || Header */
+header{
+    position: sticky;
+    width: 100%;
+    padding: var(--PADDING);
+    z-index: 2;
+}
+header > section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.logo{
+    transition: all 2s;
+    width: 30px;
+    height: 30px;
+    filter: opacity(0.8) drop-shadow(2px 20px 20px white);
+}
+.logo.active {
+    transform: rotateZ(60deg);
+}
+.menu-btn{
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.menu-icon,
+.menu-icon::after,
+.menu-icon::before{
+    background-color: var(--FONTCOLOR);
+    width: 33px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute; /*position absolute is necessary*/
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s
+}
+
+.menu-icon:first-child{
+    transform: translate(0px, -9px);
+}
+.menu-icon:last-child{
+    transform: translate(0px, 9px);
+}
+.menu-btn.active .menu-icon:nth-child(2){
+    opacity: 0;
+}
+.menu-btn.active .menu-icon:first-child{
+    transform: translateY(2px) rotate(45deg);
+}
+.menu-btn.active .menu-icon:last-child{
+    transform: translateY(-2px) rotate(-45deg);
+}
+
+.nav{
+    position: fixed; /* stays on screen unless a button is clicked */
+    right: -200%;
+    top: 100px;
+    gap: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    background: transparent;
+    display: flex;
+
+}
+.nav.active{
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: transparent;
+
+}
+.nav__menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+ol{
+    list-style-type: none;
+   
+}
+
+
+/* || Hero*/
+.hero{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.hero__text{
+    position: relative;
+    padding: var(--PADDING);
+    z-index: 2;
+    font-size: 1rem;
+    font-family: monospace;
+}
+.hero.active{
+    display: none
+}
+.full-name{
+    white-space: nowrap;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--MAINCOLOR);
+    -webkit-text-stroke: 0;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: currentcolor;
+}
+.spotlight{
+    font-weight: bold;
+}
+/* || Animated Boxes*/
+.hero__box{
+    position: absolute;
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    background: rgba(74, 250, 5, .1);
+    z-index: -1;
+    animation: animate 15s linear infinite;
+}
+@keyframes animate {
+    0%, 100%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+}
+
+.hero__box:nth-child(1){
+    top: 15%;
+    left: 40%;
+    animation-delay: calc(-2s * 1)
+}
+.hero__box:nth-child(2){
+    top:25%;
+    left: 15%;
+    animation-delay: calc(-2s * 2)
+}
+.hero__box:nth-child(3){
+    top: 25%;
+    right: 10%;
+    animation-delay: calc(-2s * 3)
+}
+.hero__box:nth-child(4){
+    top: 40%;
+    right: 30%;
+    animation-delay: calc(-1s * 12)
+}
+.hero__box:nth-child(5){
+    top: 48%;
+    left: 55%;
+    animation-delay: calc(-1s * 5)
+}
+.hero__box:nth-child(6){
+    top: 55%;
+    left: 10%;
+    animation-delay: calc(-1s * 6)
+}
+.hero__box:nth-child(7){
+    top: 65%;
+    left: 30%;
+    animation-delay: calc(-1s * 7)
+}
+.hero__box:nth-child(8){
+    top: 70%;
+    right: 15%;
+    animation-delay: calc(-1s * 8)
+}
+.hero__box:nth-child(9){
+    top: 83%;
+    left: 20%;
+    animation-delay: calc(-1s * 8)
+}
+.hero__box:nth-child(10){
+    top: 90%;
+    right: 40%;
+    animation-delay: calc(-1s * 8)
+}
+
+.hero__link-wrapper{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+.hero__link::before{
+    content: "\21A3";
+    color: var(--MAINCOLOR);
+    font-size: 1.2rem;
+}
+.hero__link{
+    transition: all 0.5s;
+}
+.hero__link:hover{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+/* @keyframes App-logo-spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+} */

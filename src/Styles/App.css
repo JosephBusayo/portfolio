@@ -1,0 +1,30 @@
+/* || RESET */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* || GENERAL */
+:root{
+  --PADDING: 50px 30px 0 30px;
+  --MAINCOLOR: rgba(0, 255, 0, .9);
+  --ACCENTCOLOR: white;
+  --FONTCOLOR: #DFE1EA;
+}
+body{
+ /*  background: white; */
+  background: linear-gradient(45deg,#05101d, #090d12);
+  color: var(--FONTCOLOR);
+}
+
+a{
+  text-decoration: none;
+  color: var(--FONTCOLOR)
+}
+a:hover{
+  color: var(--MAINCOLOR);
+}
+img{
+  display: block
+}

@@ -1,0 +1,64 @@
+
+.project{
+    margin: 1rem 1.9rem;
+}
+.box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+.box:hover{
+    transform: translateY(-20px);
+}
+
+/* START NEON DESIGN */
+/* blur can be set on either and also 
+top and left may not be necessary 
+*/
+
+.box::before, .box::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--BOX1BG);
+}
+.box::after{
+    filter: blur(10px)
+}
+.box:nth-child(2):before, .box:nth-child(2):after{
+    background: var(--BOX2BG);
+}
+.box:nth-child(3):before, .box:nth-child(3):after{
+    background: var(--BOX3BG);
+}
+
+/* blackish overlay */
+
+.box__span{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+/* whiter part of the overlay color split */
+.box__span::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
