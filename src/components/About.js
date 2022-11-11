@@ -2,9 +2,9 @@ import React from 'react';
 import '../Styles/About.css';
 
 
-export default function About(){
+export function About(props){
     return(
-        <section className="about">
+        <section className={`about ${props.isActive ? 'active' : ''}`}>
             <div className="about__img-wrapper">
                 <img 
                     src="./img/joseph.png" 
@@ -14,21 +14,21 @@ export default function About(){
                 />
             </div>
             
-            <h2 className="about__title">
-                Get to know me
-            </h2>
-
             <div className="about__text-wrapper">
+                <h2 className="about__title">
+                    About
+                </h2>
+
                 <p className="about__p">
                     Wrote <span className="about__spotlight">'Hello world' in 2019</span> using <span className="about__spotlight">python.</span> Went from there to learn and use the python's <span className="about__spotlight">tkinter</span> and <span className="about__spotlight">Django</span> frameworks in 2020.
                 </p>
 
                 <p className="about__p">
-                     Worked with a startup in august 2021 as a python(django) developer intern. So far in 2022 I've attended two bootcamps where I've been able to horn my <span className="about__spotlight">HTML</span> & <span className="about__spotlight">CSS</span> skill, learn and work with <span className="about__spotlight">JavaScript(ES6+)</span> and also <span className="about__spotlight">React</span>
+                     Worked at GTO in august 2021 as a python(django) developer intern. So far in 2022 I've attended two bootcamps where I've been able to horn my <span className="about__spotlight">HTML</span> & <span className="about__spotlight">CSS</span> skill, learn and work with <span className="about__spotlight">JavaScript(ES6+)</span> and also <span className="about__spotlight">React</span>
                 </p>
 
                 <p className="about__p">
-                     I'm currently a student at <span className="about__spotlight"> <a href="http://classvisa.com">Classvisa</a></span> and head the dev team at WIP startup.
+                     I'm a dev team lead at WIP - community where junior developers work together to build real life projects. I'm also a student at <a href="http://classvisa.com"> <span className="about__spotlight"> Classvisa </span> </a>
                 </p>
 
             </div>

@@ -1,15 +1,29 @@
+import React, {useState} from 'react';
 import './Styles/App.css';
-import Home from './components/Home'
-import Project from './components/Project'
-import About from './components/About'
+import { Routes, Route} from 'react-router-dom';
+import { Home} from './components/Home'
+import { About } from './components/About'
+import { Project } from './components/Project'
+import { Contact } from './components/Contact'
+import { Navbar } from './components/Navbar'
 
 
 function App() {
+  const [isActive, setIsActive] = useState(false)
+
+  function toggleActive(){
+      setIsActive(isActive ? false : true)
+      console.log(isActive)
+  }
   return (
     <div className="App">
-      <Home />
-      <About />
-      <Project />
+          <Navbar isActive={isActive} toggleActive={toggleActive}/>  
+      <Routes>
+          <Route path="/" element={<Home isActive = {isActive} />} />
+          <Route path="/about" element ={<About isActive = {isActive}/>} />
+          <Route path="/project" element ={<Project isActive = {isActive}/>} />
+          <Route path="/contact" element ={<Contact isActive = {isActive}/>} />
+      </Routes>
     </div>
   );
 }

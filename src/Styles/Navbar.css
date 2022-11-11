@@ -1,0 +1,119 @@
+
+/* || Header */
+header{
+    position: sticky;
+    width: 90vw;
+    z-index: 2;
+}
+.menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding-top: 20px;
+}
+.logo{
+    width: 20px;
+    height: 40px;
+    transform: translate(60deg);
+}
+
+.menu-btn{
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.menu-icon,
+.menu-icon::after,
+.menu-icon::before{
+    
+    background-color: var(--FONTCOLOR);
+    width: 33px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute; /*position absolute is necessary*/
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+.menu-icon:first-child{
+    transform: translate(0px, -9px);
+}
+.menu-icon:last-child{
+    transform: translate(0px, 9px);
+}
+.menu-btn.active .menu-icon:nth-child(2){
+    opacity: 0;
+}
+.menu-btn.active .menu-icon:first-child{
+    transform: translateY(2px) rotate(45deg);
+}
+.menu-btn.active .menu-icon:last-child{
+    transform: translateY(-2px) rotate(-45deg);
+}
+
+.nav{
+    position: fixed; /* stays on screen unless a button is clicked */
+    right: -200%;
+    top: 0;
+    gap: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    background: transparent;
+    display: flex;
+    transition: all 1s;
+    display: none;
+}
+.nav.active{
+    display: flex;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: transparent;
+
+}
+.nav__menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 600px){
+    .logo{
+        width: 27px
+    }
+    .menu-btn{
+        width:60px
+    }
+    .menu-icon,
+    .menu-icon::after,
+    .menu-icon::before{
+        width: 45px;
+        height:3.5px
+    }
+    .menu-icon:first-child{
+        transform: translate(0px, -12px);
+    }
+    .menu-icon:last-child{
+        transform: translate(0px, 12px);
+    }
+    .menu-wrapper{
+        padding-top: 50px;
+    }
+
+}

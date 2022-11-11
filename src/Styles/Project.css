@@ -1,64 +1,99 @@
 
 .project{
-    margin: 1rem 1.9rem;
-}
-.box{
-    position: relative;
-    width: 320px;
-    height: 400px;
-    color: #fff;
+    margin: 2rem auto;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 20px 30px;
-    transition: 0.5s;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
 }
-.box:hover{
-    transform: translateY(-20px);
+.project.active{
+    display: none;
+}
+.project__card{
+    position: relative;
+    width: 320px;
+    min-height: 320px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+    transition: 0.7s;
+    padding: 20px 20px;
+    overflow: hidden;
 }
 
-/* START NEON DESIGN */
-/* blur can be set on either and also 
-top and left may not be necessary 
-*/
 
-.box::before, .box::after{
+.project__card::before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 10%;
     height: 100%;
-    background: var(--BOX1BG);
+    background: rgba(229, 235, 238, 0.7);
+    transform: skewX(45deg) translateX(550px);
+    transition: 1s;
 }
-.box::after{
-    filter: blur(10px)
+.project__card:hover::before{
+    transform: skewX(45deg) translateX(-450px)
+} 
+
+
+.project__title{
+    color: var(--MAINCOLOR);
+    padding-bottom: 0.75rem;
+    font-size: 2em;
 }
-.box:nth-child(2):before, .box:nth-child(2):after{
-    background: var(--BOX2BG);
-}
-.box:nth-child(3):before, .box:nth-child(3):after{
-    background: var(--BOX3BG);
+.project__p{
+    justify-content: flex-end;
+    font-size: 1em;
 }
 
-/* blackish overlay */
-
-.box__span{
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
-    background: rgba(0,0,0,0.5);
-    z-index: 2;
+.project__link-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-/* whiter part of the overlay color split */
-.box__span::before{
-    content:"";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
+
+.project__link{
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+.project__icon{
+    width: 25px;
+    color: #fff;
+}
+.project__tools{
+    color: var(--MAINCOLOR);
+    font-size: 1rem
+}
+
+@media screen and (min-width: 600px){
+    .project__card{
+        font-size:1.2rem
+    }
+}
+
+@media screen and (min-width: 1020px){
+    .project__card:hover{
+        border: 1px solid lime;
+    }
+    .project__title{
+        font-size: 2rem
+    }
+    .project__card{
+        min-height: 320px;
+        max-height: 400px;
+        width: 320px;
+    }
+
 }
