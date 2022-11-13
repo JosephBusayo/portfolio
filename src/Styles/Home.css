@@ -70,29 +70,18 @@ span{
     display: flex;
     justify-content: center;
 }
-.hero__linkedin, .hero__github, .hero__twitter, .hero__email{
-    width: 40px;
-    height: 40px;
+.hero__social-wrapper>div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.hero__social__image{
+    width: 30px;
+    padding: 10px;
 }
 
-.hero__github{
-    background: url("img/githubStroke.png") no-repeat;
-}
-.hero__github:hover{
-    background: url("img/githubFilled.png") no-repeat;
-}
-
-.hero__twitter{
-    background: url("img/twitterStroke.png") no-repeat;
-}
-.hero__twitter:hover{
-    background: url("img/twitterFilled.png") no-repeat;
-}
-
-.hero__email{
-    background: url("img/emailStroke.png") no-repeat;
-}
-.hero__email:hover{
+/* .hero__email:hover{
     background: url("img/emailFilled.png") no-repeat;
 }
 
@@ -102,7 +91,7 @@ span{
 .hero__linkedin:hover{
     background: url("img/linkedinFilled.png") no-repeat;
 }
-
+ */
 
 /* || Animated Boxes*/
 .hero__box{

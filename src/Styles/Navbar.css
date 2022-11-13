@@ -4,6 +4,8 @@ header{
     position: sticky;
     width: 90vw;
     z-index: 2;
+    margin: 0 auto;
+    border: 1px solid green
 }
 .menu-wrapper{
     display: flex;

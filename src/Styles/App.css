@@ -8,7 +8,7 @@
 /* || GENERAL */
 :root{
   --PADDING: 0 40px 0 40px;
-  --MAINCOLOR: rgba(0, 255, 0, .9);
+  --MAINCOLOR: #00ff00e6;
   --ACCENTCOLOR: white;
   --FONTCOLOR: #DFE1EA;
 }
@@ -31,7 +31,6 @@ body{
 }
 .App{
   height: 100vh;
-  padding: var(--PADDING);
 
 }
 a{
