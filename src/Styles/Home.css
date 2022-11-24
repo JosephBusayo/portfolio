@@ -26,7 +26,7 @@ span{
 .hero__p{
     font-size: 1em;
     width: 60vw;
-    font-weight:300;
+    font-weight:350;
     margin: auto
 }
 .full-name{
@@ -58,7 +58,7 @@ span{
 }
 .hero__link{
     transition: all 0.5s;
-    font-size: .65em;
+    font-size: .8em;
     font-weight: 100;
 }
 .hero__link:hover{
