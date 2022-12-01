@@ -20,10 +20,10 @@ export function Home(props){
                 </div>
 
                 <div className="hero__social-wrapper">
-                    <div> <img className="hero__social__image" src="./img/githubfilled.png"/> </div>
-                    <div> <img className="hero__social__image" src="./img/linkedInfilled.png"></img></div>
-                    <div> <img className="hero__social__image" src="./img/twitterfilled.png"></img></div>
-                    <div> <img className="hero__social__image" src="./img/emailfilled.png"></img></div>
+                    <div> <img className="hero__social__image" alt="github" src="./img/githubFilled.png"/> </div>
+                    <div> <img className="hero__social__image" alt="linkedin"src="./img/linkedInFilled.png"></img></div>
+                    <div> <img className="hero__social__image" alt="twitter" src="./img/twitterFilled.png"></img></div>
+                    <div> <a href="mailto:busayojoseph123@gmail.com"><img className="hero__social__image" alt="email" src="./img/emailFilled.png"></img></a></div>
                 </div>
             </div>
 

@@ -17,7 +17,9 @@ function App() {
   }
   return (
     <div className="App">
-          <Navbar isActive={isActive} toggleActive={toggleActive}/>  
+          <div className="header-wrapper">
+            <Navbar isActive={isActive} toggleActive={toggleActive}/>  
+          </div>
       <Routes>
           <Route path="/" element={<Home isActive = {isActive} />} />
           <Route path="/about" element ={<About isActive = {isActive}/>} />

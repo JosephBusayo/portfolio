@@ -21,6 +21,46 @@ const ProjectData = [
         gitlink : 'https://github.com/JosephBusayo/houseofpages',
         livelink : '',
         tools : 'Python Django JavaScript'
+    },
+
+    {
+        title : 'Save the farm',
+        description : 'A fun filled click-a-mole game ',
+        gitlink : 'https://github.com/JosephBusayo/houseofpages',
+        livelink : '',
+        tools : 'React Firebase'
+    },
+
+    {
+        title : 'House Of Pages',
+        description : 'An online platformm that allow users access books from the google book API ',
+        gitlink : 'https://github.com/JosephBusayo/houseofpages',
+        livelink : '',
+        tools : 'Python Django JavaScript'
+    },
+
+    {
+        title : 'House Of Pages',
+        description : 'An online platformm that allow users access books from the google book API ',
+        gitlink : 'https://github.com/JosephBusayo/houseofpages',
+        livelink : '',
+        tools : 'Python Django JavaScript'
+    },
+
+    {
+        title : 'House Of Pages',
+        description : 'An online platformm that allow users access books from the google book API ',
+        gitlink : 'https://github.com/JosephBusayo/houseofpages',
+        livelink : '',
+        tools : 'Python Django JavaScript'
+    },
+
+    {
+        title : 'House Of Pages',
+        description : 'An online platformm that allow users access books from the google book API ',
+        gitlink : 'https://github.com/JosephBusayo/houseofpages',
+        livelink : '',
+        tools : 'Python Django JavaScript'
     }
 ]
 

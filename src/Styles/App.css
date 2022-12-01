@@ -16,9 +16,12 @@
 body{
   background-color: #313441;
   color: var(--FONTCOLOR);
-  height: 100vh;
+  margin: 0 auto;
+  width: 90vw;
+  height: 90%;
   /* font-family: 'Lato', sans-serif; */
-  padding: 1.5vw 1.5vw 0 1.5vw;
+  padding: 0 1.5vw 0 1.5vw;
+  
 }
 .overlay{
     position: absolute;
@@ -30,8 +33,9 @@ body{
     z-index: -1;
 }
 .App{
-  height: 100vh;
+  height: 90vh;
 }
+
 a{
   text-decoration: none;
   color: var(--FONTCOLOR)
@@ -48,6 +52,13 @@ img{
 
 .nav-wrapper{
   position: sticky
+}
+
+
+@media screen and (min-width: 1020px){
+  body{
+    width: 95vw
+  }
 }
 
 

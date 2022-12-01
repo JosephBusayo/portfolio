@@ -40,7 +40,7 @@
     height: 100%;
     background: rgba(229, 235, 238, 0.7);
     transform: skewX(45deg) translateX(550px);
-    transition: 1s;
+    transition: 1s 0.2s;
 }
 .project__card:hover::before{
     transform: skewX(45deg) translateX(-450px)
