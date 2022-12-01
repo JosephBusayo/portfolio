@@ -24,7 +24,6 @@ function App() {
           <Route path="/" element={<Home isActive = {isActive} />} />
           <Route path="/about" element ={<About isActive = {isActive}/>} />
           <Route path="/project" element ={<Project isActive = {isActive}/>} />
-          <Route path="/contact" element ={<Contact isActive = {isActive}/>} />
       </Routes>
     </div>
   );

@@ -19,11 +19,21 @@ export function Home(props){
                     <Link className="hero__link" to="/about"> More about me</Link>
                 </div>
 
+                <a href="./img/Joseph_Jayeoba_CV.pdf" download="Joseph_Jayeoba_CV" className="cv_link">Resume</a>
+                
                 <div className="hero__social-wrapper">
-                    <div> <img className="hero__social__image" alt="github" src="./img/githubFilled.png"/> </div>
-                    <div> <img className="hero__social__image" alt="linkedin"src="./img/linkedInFilled.png"></img></div>
-                    <div> <img className="hero__social__image" alt="twitter" src="./img/twitterFilled.png"></img></div>
-                    <div> <a href="mailto:busayojoseph123@gmail.com"><img className="hero__social__image" alt="email" src="./img/emailFilled.png"></img></a></div>
+                    <a href="https://github.com/JosephBusayo">
+                        <img className="hero__social__image" alt="github" src="./img/githubStroke.png"/>
+                    </a>
+                    <a href="https://linkedin.com/in/josephbusayo">
+                        <img className="hero__social__image" alt="linkedin" src="./img/linkedinFilled.png" />
+                    </a>
+                    <a href="https://twitter.com/josephbusayo9">
+                        <img className="hero__social__image" alt="twitter" src="./img/twitterFilled.png" />
+                    </a>
+                    <a href="mailto:busayojoseph123@gmail.com">
+                        <img className="hero__social__image" alt="email" src="./img/emailFilled.png" />
+                    </a>
                 </div>
             </div>
 
