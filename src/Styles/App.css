@@ -14,6 +14,13 @@
 }
 
 body{
+  background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-size: 16px 16px;
+  background-attachment: fixed;
   background-color: #313441;
   color: var(--FONTCOLOR);
   margin: 0 auto;
@@ -21,16 +28,7 @@ body{
   height: 90%;
   /* font-family: 'Lato', sans-serif; */
   padding: 0 1.5vw 0 1.5vw;
-  
-}
-.overlay{
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
-    background: rgba(0,0,0,0.4);
-    z-index: -1;
+  z-index: -100;
 }
 .App{
   height: 90vh;
