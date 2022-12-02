@@ -14,11 +14,6 @@
 }
 
 body{
-  background:
-        radial-gradient(black 15%, transparent 16%) 0 0,
-        radial-gradient(black 15%, transparent 16%) 8px 8px,
-        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
   background-size: 16px 16px;
   background-attachment: fixed;
   background-color: #313441;
@@ -26,7 +21,7 @@ body{
   margin: 0 auto;
   width: 90vw;
   height: 90%;
-  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Lato', sans-serif;
   padding: 0 1.5vw 0 1.5vw;
   z-index: -100;
 }
