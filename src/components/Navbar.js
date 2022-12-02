@@ -42,13 +42,6 @@ export function Navbar(props){
                         onClick={() => props.toggleActive()}
                     >Projects</Link>
                 </li>
-
-                <li><Link 
-                        to="/contact" 
-                        className={`nav__link ${props.isActive ? 'active' : ''}`}
-                        onClick={() => props.toggleActive()}
-                    >Contact</Link>
-                </li>
             </ol>
         </nav>
     </header>
