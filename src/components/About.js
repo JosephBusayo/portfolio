@@ -28,7 +28,7 @@ export function About(props){
                 </p>
 
                 <p className="about__p">
-                     I'm a dev team lead at WIP - community where junior developers work together to build real life projects. I'm also a student at <a href="http://classvisa.com"> <span> Classvisa </span> </a>
+                     I'm a part of WIP - community where junior developers work together to build real life projects. I'm also a student at <a href="http://classvisa.com"> <span> Classvisa </span> </a>
                 </p>
 
             </div>
