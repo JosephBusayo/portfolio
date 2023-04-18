@@ -12,21 +12,25 @@
   --ACCENTCOLOR: white;
   --FONTCOLOR: #DFE1EA;
 }
+.dark{
+  
+}
 
 body{
   background-size: 16px 16px;
   background-attachment: fixed;
-  background-color: #313441;
   color: var(--FONTCOLOR);
   margin: 0 auto;
-  width: 90vw;
-  height: 90%;
   font-family: 'Lato', sans-serif;
   padding: 0 1.5vw 0 1.5vw;
   z-index: -100;
+  background: #1E1E1E;
+
 }
 .App{
   height: 90vh;
+  background: #1E1E1E;
+
 }
 
 a{
