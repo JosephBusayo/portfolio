@@ -2,8 +2,8 @@ const ProjectData = [
     {
         title : 'Jobhive',
         description : 'A webapp where authenticated users can create new jobs post, update and also delete it.',
-        gitlink : 'https://jobhive.cyclic.app/jobs',
-        livelink : '',
+        gitlink : 'https://github.com/JosephBusayo/jobhive',
+        livelink : 'https://jobhive.cyclic.app/jobs',
         tools : 'Nodejs| Express-react | Passpoerjs | Cyclic '
     },
     {
@@ -12,6 +12,13 @@ const ProjectData = [
         gitlink : 'https://github.com/JosephBusayo/airbnb-clone',
         livelink : 'https://airbnbclone-app.web.app/',
         tools : 'React | Firebase'
+    },
+    {
+        title : 'Toolbox',
+        description : 'Platform to get materials for developmemnt',
+        gitlink : 'https://github.com/JosephBusayo/toolbox',
+        livelink : ' https://toolbox-v1.netlify.app/',
+        tools : 'Typescript | React | Netlify'
     },
     {
         title : 'Wordy',
@@ -27,7 +34,6 @@ const ProjectData = [
         livelink : 'https://quest-task.web.app/',
         tools : 'React | Firebase'
     },
-
     {
         title : 'Save the farm',
         description : 'A fun filled click-a-mole game ',
@@ -35,7 +41,6 @@ const ProjectData = [
         livelink : 'https://josephbusayo.github.io/click_a_mole/',
         tools : 'React | Firebase'
     },
-
 ]
 
 export default ProjectData
